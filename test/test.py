@@ -6,7 +6,7 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles
 
 
-'''@cocotb.test()
+@cocotb.test()
 async def test_loopback(dut):
     dut._log.info("Start")
 
@@ -49,4 +49,4 @@ async def test_counter(dut):
     for i in range(256):
         assert dut.uo_out.value == dut.uio_out.value
         assert dut.uo_out.value == i
-        await ClockCycles(dut.clk, 1)'''
+        await ClockCycles(dut.clk, 1)
